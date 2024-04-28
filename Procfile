@@ -1,1 +1,1 @@
-worker: npm run build && node backend/Index.js
+worker: npm run build && node backend/Server.js
