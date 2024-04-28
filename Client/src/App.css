@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+  --bg-color: #00B4C3;
+  --white: #fff;
+  --txt-color: #000000;
+  --btn-color: #00B4C3;
+  --btn-text: #ffff;
+  --shadow-col: #888888;
+}
+
+/* ============= Apply for all ============== */
+
+section{
+  margin: 30px 10px;
+  padding: 0 20px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px 20px;
+}
+
+
+/* ============= Navbar section ============== */
+.navbar{
+  z-index: 3;
+  top: 0;
+  position: sticky;
+  box-shadow: 5px 10px 18px #888888;
+}
+.navbar-nav{
+  font-size: 18px;
+  font-weight: 500;
+}
+.navbar-brand{
+  color: var(--white);
+  padding-left: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+.product-link {
+  text-decoration: none !important;
+  color: var(--txt-color) !important;
+}
+
+
+/* =========== Home section ============ */
+
+.home-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  background-image: linear-gradient(to right , #FFD1DC, #00B4C3, #FFD1DC);
+}
+.home-head {
+  margin-top: 2rem;
+  color: var(--white);
+    padding: 10px 20px;
+    text-align: center;
+}
+.items-home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-img img {
+  margin-top: 15px;
+  max-width: 30%;
+  height: auto;
+
+@media screen and (max-width: 600px) {
+    img {
+        max-width: 80%;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  img {
+      max-width: 60%;
+  }
+}
+}
+
+.animated-img {
+  margin-top: 20px;
+  cursor: pointer;
+  animation: moveUpDown 2s infinite alternate; /* Define animation */
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0); /* Start position */
+  }
+  100% {
+    transform: translateY(-20px); /* End position */
+  }
+}
+
+.catchy-view {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.catchy-view h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.catchy-view p {
+  color: var(--white);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.cta-button {
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--txt-color);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+  color: var(--white);
+    background-color: var(--txt-color);
+}
+.flt-home{
+  margin-top: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* .cart-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+.cart-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.load-btn{
+  text-align: center;
+  align-items: center;
+}
+
+/* =========== About section ============ */
+
+.end-section .section-info{
+  margin: 0;
+}
+
+.end-section .title{
+  font-size: 100px;
+  line-height: 150px;
+  margin: 50px;
+}
+
+header {
+  text-align: center;
+}
+.about-section {
+  margin-bottom: 30px;
+}
+.about-section h2 {
+  margin-top: 0;
+}
+.about-section p {
+  font-size: 18px;
+}
+.img-head {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.img-head img {
+  width: 250px;
+  display: flex;
+}
+
+
+/* =========== Blog section ============ */
+
+.review {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.review h3 {
+  margin-top: 0;
+}
+.review p {
+  margin-bottom: 5px;
+}
+
+/* =========== Register section ============ */
+
+.reg-pic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reg-pic img {
+  width: 100%;
+}
+
+
+/* =========== Footer section ============ */
+
+.footer-sec {
+  background-color: var(--bg-color);
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+}
+.footer-info{
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.footer-itmes{
+  text-align: center;
+}
+.footer-itmes h4{
+  text-align: center;
+}
